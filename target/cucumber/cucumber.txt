@@ -1,0 +1,4 @@
+
+@Smoke @tag1
+Scenario: Title of your scenario # features/google.feature:6
+  Given I am on google           # com.serenity.stepDefinations.GoogleStepDefination.i_am_on_google()
