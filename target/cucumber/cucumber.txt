@@ -1,4 +1,6 @@
 
-@Smoke @tag1
-Scenario: Title of your scenario # features/google.feature:6
-  Given I am on google           # com.serenity.stepDefinations.GoogleStepDefination.i_am_on_google()
+@Rest @RestDemo
+Scenario: Validate the post request                             [90m# features/RestAssured.feature:4[0m
+  [32mGiven [0m[32mthe following trade:[0m                                    [90m# com.serenity.stepDefinations.RestDemoStepDefination.the_following_trade(java.util.List<java.util.Map<java.lang.String, java.lang.String>>)[0m
+  [32mWhen [0m[32mI record the trade[0m                                       [90m# com.serenity.stepDefinations.RestDemoStepDefination.i_record_the_trade()[0m
+  [32mThen [0m[32mthe recorded trade should include the following details:[0m [90m# com.serenity.stepDefinations.RestDemoStepDefination.the_recorded_trade_should_include_the_following_details(java.util.List<java.util.Map<java.lang.String, java.lang.String>>)[0m

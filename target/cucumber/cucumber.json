@@ -3,45 +3,105 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-11-15T16:08:12.462Z",
-        "line": 6,
-        "name": "Title of your scenario",
+        "start_timestamp": "2021-11-22T03:59:08.597Z",
+        "line": 4,
+        "name": "Validate the post request",
         "description": "",
-        "id": "title-of-your-feature;title-of-your-scenario",
+        "id": "record-a-new-trade;validate-the-post-request",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 25142767400,
+              "duration": 1423681000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "I am on google",
+            "line": 5,
+            "name": "the following trade:",
             "match": {
-              "location": "com.serenity.stepDefinations.GoogleStepDefination.i_am_on_google()"
+              "location": "com.serenity.stepDefinations.RestDemoStepDefination.the_following_trade(java.util.List\u003cjava.util.Map\u003cjava.lang.String, java.lang.String\u003e\u003e)"
             },
+            "rows": [
+              {
+                "cells": [
+                  "security",
+                  "buySell",
+                  "quantity",
+                  "priceInCents"
+                ]
+              },
+              {
+                "cells": [
+                  "APPL",
+                  "BUY",
+                  "10",
+                  "10000"
+                ]
+              }
+            ],
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1482342000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I record the trade",
+            "match": {
+              "location": "com.serenity.stepDefinations.RestDemoStepDefination.i_record_the_trade()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 143601000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the recorded trade should include the following details:",
+            "match": {
+              "location": "com.serenity.stepDefinations.RestDemoStepDefination.the_recorded_trade_should_include_the_following_details(java.util.List\u003cjava.util.Map\u003cjava.lang.String, java.lang.String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "security",
+                  "buySell",
+                  "quantity",
+                  "priceInCents"
+                ]
+              },
+              {
+                "cells": [
+                  "APPL",
+                  "BUY",
+                  "10",
+                  "10000"
+                ]
+              }
+            ],
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Smoke"
+            "name": "@Rest"
           },
           {
-            "name": "@tag1"
+            "name": "@RestDemo"
           }
         ]
       }
     ],
-    "name": "Title of your feature",
-    "description": "  I want to use this template for my feature file",
-    "id": "title-of-your-feature",
+    "name": "Record a new trade",
+    "description": "",
+    "id": "record-a-new-trade",
     "keyword": "Feature",
-    "uri": "file:features/google.feature",
+    "uri": "file:features/RestAssured.feature",
     "tags": [
       {
-        "name": "@Smoke",
+        "name": "@Rest",
         "type": "Tag",
         "location": {
           "line": 1,
