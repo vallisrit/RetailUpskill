@@ -1,12 +1,8 @@
 package com.serenity.stepDefinations.makemytrip;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
-
-import java.util.HashMap;
 import java.util.Map;
 
-import com.serenity.pages.makemytrippage;
 import com.serenity.steps.flightbookingStep.FlightsearchSteps;
 
 import io.cucumber.java.en.Given;

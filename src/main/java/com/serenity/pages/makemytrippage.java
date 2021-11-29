@@ -1,10 +1,6 @@
 package com.serenity.pages;
 
-import java.util.List;
-
 import net.serenitybdd.core.pages.WebElementFacade;
-import net.thucydides.core.annotations.Step;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
