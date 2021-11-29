@@ -16,7 +16,7 @@ public class FlightBookingSteps extends CommonStep {
 
 	@Step
 	public void booking_one_way_flight(Map<String, String> userDetails) {
-		home.lnk_flight.click();
+		//home.lnk_flight.click();
 		fb.one_way_booking_flight(userDetails);
 	}
 
